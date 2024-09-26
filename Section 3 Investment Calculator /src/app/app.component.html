@@ -1,0 +1,8 @@
+<app-header />
+<app-user-inputs (returns)="showComponent()"/>
+
+@if( showInvestments){
+    <app-investment-results />
+} @else {
+    <p>Please enter information above and click Calculate</p>
+}
